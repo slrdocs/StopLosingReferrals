@@ -55,7 +55,7 @@
       "email": "pay@stoplosingreferrals.com",
       "currency": "USD"
     },
-    "uniqCompNum": 24,
+    "uniqCompNum": 25,
     "versionPublish": "4.12.3",
     "screenshot": "screenshot.png",
     "robotsText": "User-agent: *\r\nDisallow: /cgi-bin\r\n"
@@ -440,7 +440,7 @@
         "title": "Google Triple Play Setup - Stop Losing Referrals",
         "order": 1,
         "meta_descr": "This Google Mistake That You Are Making Is Costing You Thousands Of Dollars... Watch This Case Study And See How You Are Throwing Money Away.",
-        "footer_custom": "",
+        "footer_custom": "<script>\n    var time = \"3:52\";\n    var timeSplit = time.split(\":\");\n    var minutes = Number(timeSplit[0]);\n    var seconds = Number(timeSplit[1]);\n\n    var delayTime = ((minutes * 60) + seconds) * 1000;\n\n    $(document).ready(function() {\n        $('.buttonBox').hide(0).delay(delayTime).show(0);  \n    }); \n</script> ",
         "html_before": ""
       },
       "components": [
@@ -473,39 +473,18 @@
           "_params": {}
         },
         {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "background": "@bgColor",
-            ".mbr-section-subtitle": {
-              "color": "#8d97ad"
-            },
-            "& when (@gradientBg)": {
-              "background": "linear-gradient(@bgColor, @color2)"
-            },
-            ".video-block": {
-              "margin": "auto",
-              "& when (@fullWidth)": {
-                "width": "100% !important"
-              }
-            },
-            "@media (max-width: 767px)": {
-              ".video-block": {
-                "width": "100% !important"
-              }
-            }
-          },
-          "_name": "video1",
-          "_customHTML": "<section group=\"Images & Videos\" class=\"video1\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"0\" step=\"1\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"0\" step=\"1\">\n    <input type=\"checkbox\" title=\"Show Title\" name=\"showSectionTitle\">\n    <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n    <input type=\"range\" inline title=\"Width\" name=\"videoSize\" min=\"20\" max=\"100\" value=\"50\" step=\"1\" condition=\"fullWidth == false\">\n\n    <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\" condition=\"fullWidth == false\">\n    <input type=\"checkbox\" title=\"Gradient\" name=\"gradientBg\" condition=\"fullWidth == false\">\n    <input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#51aafa\" condition=\"gradientBg && fullWidth == false\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"container\" mbr-if=\"showSubtitle||showSectionTitle\">\n        <h2 class=\"mbr-fonts-style mb-3 mbr-section-title align-center\" mbr-theme-style=\"display-2\" mbr-if=\"showSectionTitle\" data-app-selector=\".mbr-section-title\">Video Title</h2>\n        <h3 class=\"mbr-section-subtitle mbr-text mbr-fonts-style mb-4 mbr-light align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex itaque laboriosam quam,<br> consequuntur vero officiis molestias, inventore repellendus.\n        </h3>\n    </div>\n    <figure class=\"mbr-figure align-center\" mbr-class=\"{'container-fluid':fullWidth == false}\">\n        <div class=\"video-block\" mbr-style=\"{'width':videoSize+'%'}\">\n            <div mbr-video>\n                <iframe src=\"https://youtu.be/wKK5zqYv_fY?loop=0&autoplay=1\"></iframe>\n            </div>\n        </div>\n    </figure>\n</section>",
-          "_cid": "rXt2MwSUnO",
-          "_anchor": "video1-4",
+          "_customTemplate": true,
+          "_afterNavbarItem": false,
+          "_customHTML": "<div align=\"center\">\n<!-- Replace the entire line below with your video code -->\n<iframe width=\"750\" height=\"500\" src=\"https://www.youtube.com/embed/wKK5zqYv_fY\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"\"></iframe>\n<!-- Replace the entire line above with your video code -->\n</div>\n",
+          "_customCSS": "",
+          "alias": "code-editor",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "pro.custom-html",
+          "_anchor": "custom-html-o",
           "_PHPplaceholders": [],
-          "_JSplaceholders": [],
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
+          "_JSplaceholders": []
         },
         {
           "alias": false,

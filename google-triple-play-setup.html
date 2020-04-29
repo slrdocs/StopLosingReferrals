@@ -42,16 +42,12 @@
     </div>
 </section>
 
-<section class="video1 cid-rXt2MwSUnO" id="video1-4">
-
-    
-    
-    <figure class="mbr-figure align-center container-fluid">
-        <div class="video-block" style="width: 50%;">
-            <div><iframe class="mbr-embedded-video" src="https://www.youtube.com/embed/wKK5zqYv_fY?rel=0&amp;amp;showinfo=0&amp;autoplay=1&amp;loop=0" width="1280" height="720" frameborder="0" allowfullscreen></iframe></div>
-        </div>
-    </figure>
-</section>
+<div id="custom-html-o"><div align="center">
+<!-- Replace the entire line below with your video code -->
+<iframe width="750" height="500" src="https://www.youtube.com/embed/wKK5zqYv_fY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<!-- Replace the entire line above with your video code -->
+</div>
+</div>
 
 <section class="image1 cid-rXyyFPlHEA" id="image1-g">
     <!-- Block parameters controls (Blue "Gear" panel) -->
@@ -80,6 +76,17 @@
   <script src="assets/shopping-cart/minicart-customizer.js"></script>
   <script src="assets/theme/js/script.js"></script>
   <script src="assets/shopping-cart/shop-lightbox.js"></script>
-  
+  <script>
+    var time = "3:52";
+    var timeSplit = time.split(":");
+    var minutes = Number(timeSplit[0]);
+    var seconds = Number(timeSplit[1]);
+
+    var delayTime = ((minutes * 60) + seconds) * 1000;
+
+    $(document).ready(function() {
+        $('.buttonBox').hide(0).delay(delayTime).show(0);  
+    }); 
+</script> 
 </body>
 </html>
