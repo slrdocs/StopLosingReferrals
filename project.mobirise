@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "StopLosingReferrals.com",
-    "currentPage": "index.html",
+    "currentPage": "google-triple-play-setup.html",
     "theme": {
       "name": "businessm4",
       "title": "BusinessM4",
@@ -440,7 +440,7 @@
         "title": "Google Triple Play Setup - Stop Losing Referrals",
         "order": 1,
         "meta_descr": "This Google Mistake That You Are Making Is Costing You Thousands Of Dollars... Watch This Case Study And See How You Are Throwing Money Away.",
-        "footer_custom": "<script>\n    var time = \"3:52\";\n    var timeSplit = time.split(\":\");\n    var minutes = Number(timeSplit[0]);\n    var seconds = Number(timeSplit[1]);\n\n    var delayTime = ((minutes * 60) + seconds) * 1000;\n\n    $(document).ready(function() {\n        $('.buttonBox').hide(0).delay(delayTime).show(0);  \n    }); \n</script> ",
+        "footer_custom": "",
         "html_before": ""
       },
       "components": [
